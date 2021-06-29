@@ -1,0 +1,6 @@
+function functioname(params,default=param){                   //if our function call doesnt have arguments ,it will use the default param,or when the param is undefined
+    functionbody
+}
+functioname(arguments)
+
+const functionname=()=>{}
