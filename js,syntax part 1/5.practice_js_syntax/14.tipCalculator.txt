@@ -1,0 +1,33 @@
+Create a function, tipCalculator(), that has two parameters, a string representing the quality of the service received and a number representing the total cost.
+
+Return the tip, as a number, based on the following:
+‘bad’ should return a 5% tip
+‘ok’ should return a 15% tip
+‘good’ should return a 20% tip
+‘excellent’ should return a 30% tip
+all other inputs should default to 18%
+
+
+
+
+function tipCalculator(quality,total_cost){
+  if(typeof quality==='string' && typeof total_cost==='number'){
+    if(quality==='bad'){
+      return total_cost/100*5
+    }
+    else if(quality==='ok'){
+      return total_cost/100*15
+    }
+    else if(quality==='good'){
+      return total_cost/100*20
+    }
+    else if(quality==='excellent'){
+      return total_cost/100*30
+    }
+    else{
+      return total_cost/100*18
+    }
+  }else{
+    return 'input error'
+  }
+}

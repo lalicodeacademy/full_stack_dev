@@ -1,0 +1,9 @@
+function agreeOrDisagree(first_value,second_value){
+  if(first_value===second_value){
+    return 'You agree!'
+  }else{
+    return 'You disagree!'
+  }
+}
+
+

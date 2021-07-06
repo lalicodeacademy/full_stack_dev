@@ -1,0 +1,36 @@
+
+Write a function, lifePhase(), that takes in a person’s age, as a number, and returns which phase of life they are in.
+
+Here are the classifications:
+0-3 should return 'baby'
+4-12 should return 'child'
+13-19 should return 'teen'
+20-64 should return 'adult'
+65-140 should return 'senior citizen'
+If the number is less than 0 or greater than 140, the program should return 'This is not a valid age'
+
+
+
+
+function lifePhase(age){
+  if(0<age && age<4){
+    return 'baby'
+  }
+  else if(3<age && age<13){
+    return 'child'
+  }
+  else if(12<age && age<20){
+    return 'teen'
+  }
+  else if(19<age && age<65){
+    return 'adult'
+  }
+  else if(64<age && age<141){
+    return 'senior citizen'
+  }
+  else{
+    return 'This is not a valid age'
+  }
+}
+
+

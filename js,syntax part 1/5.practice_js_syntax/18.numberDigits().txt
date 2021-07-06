@@ -1,0 +1,12 @@
+// Create function here 
+function numberDigits(x){
+  if(x>=0 && x<10){
+    return `One digit: ${x}`
+  }
+  else if(x>9 && x<100){
+    return `Two digits: ${x}`
+  }
+  else{
+    return `The number is: ${x}`
+  }
+}
